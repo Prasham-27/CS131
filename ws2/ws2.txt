@@ -1,154 +1,34 @@
-Script started on 2025-02-07 06:15:57+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
-[?2004h]0;ubuntu@ubuntu: ~/CS131/ws2[01;32mubuntu@ubuntu[00m:[01;34m~/CS131/ws2[00m$ v[K[7mpwd[27m
-[7mecho $HOME[27m
-[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd
-echo $HOME
-[K[A[C[C[C[C[C[C[C[C[C[C
-[?2004l/home/ubuntu/CS131/ws2
-/home/ubuntu
-[?2004h]0;ubuntu@ubuntu: ~/CS131/ws2[01;32mubuntu@ubuntu[00m:[01;34m~/CS131/ws2[00m$ v[K[7mid[27m
-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cid
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-[?2004luid=1000(ubuntu) gid=1000(ubuntu) groups=1000(ubuntu),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),110(lxd)
-[?2004h]0;ubuntu@ubuntu: ~/CS131/ws2[01;32mubuntu@ubuntu[00m:[01;34m~/CS131/ws2[00m$ v[K[7mls /proc | grep mem[27m
-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls /proc | grep mem
-[A
-[?2004lio[01;31m[Kmem[m[K
-[01;31m[Kmem[m[Kinfo
-[?2004h]0;ubuntu@ubuntu: ~/CS131/ws2[01;32mubuntu@ubuntu[00m:[01;34m~/CS131/ws2[00m$ v[K[7mls /proc | grep cpu[27m
-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls /proc | grep cpu
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-[?2004l[01;31m[Kcpu[m[Kinfo
-[?2004h]0;ubuntu@ubuntu: ~/CS131/ws2[01;32mubuntu@ubuntu[00m:[01;34m~/CS131/ws2[00m$ v[K[7mhead /proc/meminfo[27m
-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead /proc/meminfo
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-[?2004lMemTotal:        6058772 kB
-MemFree:         3413712 kB
-MemAvailable:    5122696 kB
-Buffers:           47804 kB
-Cached:          1827224 kB
-SwapCached:            0 kB
-Active:          1168108 kB
-Inactive:        1158984 kB
-Active(anon):       2148 kB
-Inactive(anon):   526216 kB
-[?2004h]0;ubuntu@ubuntu: ~/CS131/ws2[01;32mubuntu@ubuntu[00m:[01;34m~/CS131/ws2[00m$ v[K[7mhead /proc/cpuinfo[27m
-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead /proc/cpuinfo
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-[?2004lprocessor	: 0
-BogoMIPS	: 48.00
-Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 asimddp sha512 asimdfhm dit uscat ilrcpc flagm sb paca pacg dcpodp flagm2 frint
-CPU implementer	: 0x61
-CPU architecture: 8
-CPU variant	: 0x0
-CPU part	: 0x000
-CPU revision	: 0
+# Worksheet 2 Results
 
-processor	: 1
-[?2004h]0;ubuntu@ubuntu: ~/CS131/ws2[01;32mubuntu@ubuntu[00m:[01;34m~/CS131/ws2[00m$ [7mtail /proc/cpuinfo[27m
-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctail /proc/cpuinfo
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-[?2004l
-processor	: 7
-BogoMIPS	: 48.00
-Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 asimddp sha512 asimdfhm dit uscat ilrcpc flagm sb paca pacg dcpodp flagm2 frint
-CPU implementer	: 0x61
-CPU architecture: 8
-CPU variant	: 0x0
-CPU part	: 0x000
-CPU revision	: 0
+## Task 1: Directory Creation and Navigation
+Command used: pwd
+Current directory: /home/ubuntu/CS131/ws2
 
-[?2004h]0;ubuntu@ubuntu: ~/CS131/ws2[01;32mubuntu@ubuntu[00m:[01;34m~/CS131/ws2[00m$ v[K[7mcat /proc/cpuinfo[27m
-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat /proc/cpuinfo
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-[?2004lprocessor	: 0
-BogoMIPS	: 48.00
-Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 asimddp sha512 asimdfhm dit uscat ilrcpc flagm sb paca pacg dcpodp flagm2 frint
-CPU implementer	: 0x61
-CPU architecture: 8
-CPU variant	: 0x0
-CPU part	: 0x000
-CPU revision	: 0
+## Task 2: Home Directory Path
+Commands used: pwd, echo $HOME
+Home directory path: /home/ubuntu
 
-processor	: 1
-BogoMIPS	: 48.00
-Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 asimddp sha512 asimdfhm dit uscat ilrcpc flagm sb paca pacg dcpodp flagm2 frint
-CPU implementer	: 0x61
-CPU architecture: 8
-CPU variant	: 0x0
-CPU part	: 0x000
-CPU revision	: 0
+## Task 3: UID and Group Information
+Command used: id
+UID: 1000 (ubuntu)
+Groups: ubuntu(1000), adm(4), cdrom(24), sudo(27), dip(30), plugdev(46), lxd(110)
 
-processor	: 2
-BogoMIPS	: 48.00
-Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 asimddp sha512 asimdfhm dit uscat ilrcpc flagm sb paca pacg dcpodp flagm2 frint
-CPU implementer	: 0x61
-CPU architecture: 8
-CPU variant	: 0x0
-CPU part	: 0x000
-CPU revision	: 0
+## Task 4: Memory and CPU Files Location
+Commands used: ls /proc | grep mem, ls /proc | grep cpu
+Memory information file: /proc/meminfo
+CPU information file: /proc/cpuinfo
 
-processor	: 3
-BogoMIPS	: 48.00
-Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 asimddp sha512 asimdfhm dit uscat ilrcpc flagm sb paca pacg dcpodp flagm2 frint
-CPU implementer	: 0x61
-CPU architecture: 8
-CPU variant	: 0x0
-CPU part	: 0x000
-CPU revision	: 0
+## Task 5: Server Memory Information
+Command used: head /proc/meminfo
+Total Memory: 6058772 kB
+Available Memory: 5122696 kB
 
-processor	: 4
-BogoMIPS	: 48.00
-Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 asimddp sha512 asimdfhm dit uscat ilrcpc flagm sb paca pacg dcpodp flagm2 frint
-CPU implementer	: 0x61
-CPU architecture: 8
-CPU variant	: 0x0
-CPU part	: 0x000
-CPU revision	: 0
+## Task 6: CPU Information
+Commands used: head /proc/cpuinfo, tail /proc/cpuinfo, cat /proc/cpuinfo
+Number of processors: 8 (processors 0-7)
+Architecture: ARM (CPU architecture: 8)
+Processor speed: 48.00 BogoMIPS
 
-processor	: 5
-BogoMIPS	: 48.00
-Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 asimddp sha512 asimdfhm dit uscat ilrcpc flagm sb paca pacg dcpodp flagm2 frint
-CPU implementer	: 0x61
-CPU architecture: 8
-CPU variant	: 0x0
-CPU part	: 0x000
-CPU revision	: 0
-
-processor	: 6
-BogoMIPS	: 48.00
-Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 asimddp sha512 asimdfhm dit uscat ilrcpc flagm sb paca pacg dcpodp flagm2 frint
-CPU implementer	: 0x61
-CPU architecture: 8
-CPU variant	: 0x0
-CPU part	: 0x000
-CPU revision	: 0
-
-processor	: 7
-BogoMIPS	: 48.00
-Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 asimddp sha512 asimdfhm dit uscat ilrcpc flagm sb paca pacg dcpodp flagm2 frint
-CPU implementer	: 0x61
-CPU architecture: 8
-CPU variant	: 0x0
-CPU part	: 0x000
-CPU revision	: 0
-
-[?2004h]0;ubuntu@ubuntu: ~/CS131/ws2[01;32mubuntu@ubuntu[00m:[01;34m~/CS131/ws2[00m$ [7mcat /etc/os-release[27m
-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat /etc/os-release
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-[?2004lPRETTY_NAME="Ubuntu 22.04.3 LTS"
-NAME="Ubuntu"
-VERSION_ID="22.04"
-VERSION="22.04.3 LTS (Jammy Jellyfish)"
-VERSION_CODENAME=jammy
-ID=ubuntu
-ID_LIKE=debian
-HOME_URL="https://www.ubuntu.com/"
-SUPPORT_URL="https://help.ubuntu.com/"
-BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
-PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
-UBUNTU_CODENAME=jammy
-[?2004h]0;ubuntu@ubuntu: ~/CS131/ws2[01;32mubuntu@ubuntu[00m:[01;34m~/CS131/ws2[00m$ v[K[7mexit[27mexit
-[?2004lexit
-
-Script done on 2025-02-07 06:17:46+00:00 [COMMAND_EXIT_CODE="0"]
+## Task 7: Operating System Version
+Command used: cat /etc/os-release
+OS Version: Ubuntu 22.04.3 LTS (Jammy Jellyfish)
