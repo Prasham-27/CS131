@@ -1,0 +1,20 @@
+    1  history
+    2  cd ~/
+    3  ls -l
+    4  ls -l .*
+    5  cat .bash_history 
+    6  rm .bash_history 
+    7  [200~git clone https://github.com/Prasham-27/CS131
+    8  git clone https://github.com/Prasham-27/CS131
+    9  pip install git
+   10  sudo install git
+   11  sudo apt-get install git
+   12  git clone https://github.com/Prasham-27/CS131
+   13  sudo apt update
+   14  sudo apt install git
+   15  git --version
+   16  git clone https://github.com/Prasham-27/CS131
+   17  cd CS131
+   18  mkdir ws2 && cd ws2
+   19  script ws2.txt
+   20  history > cmds.log
