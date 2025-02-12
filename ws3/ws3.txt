@@ -1,0 +1,17 @@
+Top 3 Pickup Locations for January 2, 2019:
+   8605 161.0
+   8407 132.0
+   8163 186.0
+The above results show the top 3 most popular pickup location IDs on January 2, 2019, along with their respective counts.
+
+Top 3 Pickup Locations for January 10, 2019:
+  13738 237.0
+  13519 236.0
+  12997 161.0
+The above results show the top 3 most popular pickup location IDs on January 10, 2019, along with their respective counts.
+
+Notes:
+- The dataset was filtered using grep by specific dates (January 2 and January 10, 2019).
+- The pickup location IDs were extracted using cut (8th column).
+- Results were sorted and counted using sort and uniq commands.
+
