@@ -1,73 +1,16 @@
-    1  history
-    2  cd ~/
-    3  ls -l
-    4  ls -l .*
-    5  cat .bash_history 
-    6  rm .bash_history 
-    7  [200~git clone https://github.com/Prasham-27/CS131
-    8  git clone https://github.com/Prasham-27/CS131
-    9  pip install git
-   10  sudo install git
-   11  sudo apt-get install git
-   12  git clone https://github.com/Prasham-27/CS131
-   13  pwd
-   14  echo $HOME
-   15  id
-   16  ls /proc | grep mem
-   17  ls /proc | grep cpu
-   18  head /proc/meminfo
-   19  head /proc/cpuinfo
-   20  tail /proc/cpuinfo
-   21  cat /proc/cpuinfo
-   22  cat /etc/os-release
-   23  exit
-   24  git add ws2.txt cmds.log
-   25  cd CS 131
-   26  cd CS131
-   27  cd ws2
-   28  git add ws2.txt cmds.log
-   29  git commit -m "Completed Workshop 2"
-   30  git config --global user.name "Prasham-27"
-   31  git config user.email "prashams27@gmail.com"
-   32  git commit -m "Completed Worksheet 2"
-   33  git push origin main
-   34  vim cmds.log
-   35  sudo apt update
-   36  sudo apt install git
-   37  git --version
-   38  git clone https://github.com/Prasham-27/CS131
-   39  cd CS131
-   40  mkdir ws2 && cd ws2
-   41  script ws2.txt
-   42  history > cmds.log
-   43  vim ws2.txt
-   44  export PATH=$PATH:/home/ubuntu/.local/bin
-   45  [200~pip --version
-   46  gdown --version
-   47  ~pip --version
-   48  gdown --version
-   49  whoami
-   50  sudo apt update
-   51  sudo apt install python3-pip -y
-   52  pip install gdown
-   53  pip --version
-   54  gdown --version
-   55  pip show gdown
-   56  gdown --version
-   57  ls /home/ubuntu/.local/bin/gdown
-   74  grep "2019-01-02" 2019-01-h1.csv > january_2.csv
-   75  cut -d',' -f8 january_2.csv > pickup_ids_january_2.txt
-   76  sort pickup_ids_january_2.txt > sorted_pickup_ids_january_2.txt
-   77  uniq -c sorted_pickup_ids_january_2.txt > counts_january_2.txt
-   78  sort -nr counts_january_2.txt | head -n 3 > top_3_january_2.txt
-   85  touch ws3.txt
-   86  echo "Top 3 Pickup Locations for January 2, 2019:" >> ws3.txt
-   87  cat top_3_january_2.txt >> ws3.txt
-   88  vim ws3.txt
-   89  grep "2019-01-10" 2019-01-h1.csv > january_10.csv
-   90  cut -d',' -f8 january_10.csv > pickup_ids_january_10.txt
-   91  sort pickup_ids_january_10.txt | uniq -c | sort -nr | head -n 3 > top_3_january_10.txt
-   92  echo "Top 3 Pickup Locations for January 10, 2019:" >> ws3.txt
-   93  cat top_3_january_10.txt >> ws3.txt
-   94  vim ws3.txt
-   96  history > cmds.log
+grep "2019-01-02" 2019-01-h1.csv > january_2.csv
+cut -d',' -f8 january_2.csv > pickup_ids_january_2.txt
+sort pickup_ids_january_2.txt > sorted_pickup_ids_january_2.txt
+uniq -c sorted_pickup_ids_january_2.txt > counts_january_2.txt
+sort -nr counts_january_2.txt | head -n 3 > top_3_january_2.txt
+touch ws3.txt
+echo "Top 3 Pickup Locations for January 2, 2019:" >> ws3.txt
+cat top_3_january_2.txt >> ws3.txt
+vim ws3.txt
+grep "2019-01-10" 2019-01-h1.csv > january_10.csv
+cut -d',' -f8 january_10.csv > pickup_ids_january_10.txt
+sort pickup_ids_january_10.txt | uniq -c | sort -nr | head -n 3 > top_3_january_10.txt
+echo "Top 3 Pickup Locations for January 10, 2019:" >> ws3.txt
+cat top_3_january_10.txt >> ws3.txt
+vim ws3.txt
+history > cmds.log
