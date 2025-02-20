@@ -1,0 +1,26 @@
+
+Task 1a Output:
+total 4
+-rw-rw-r-- 1 ubuntu ubuntu 17 Feb 20 07:54 a1.txt
+
+Task 1b Output:
+      2      11      58
+
+Task 2c Output:
+239.0-246.0.txt average: 12.43
+48.0-161.0.txt average: 7.07
+
+Task 2d Output:
+36090.3
+
+Task 2e Output:
+  19896 236.0
+  18013 161.0
+  16686 237.0
+  16556 230.0
+  14324 170.0
+  13961 48.0
+  13899 162.0
+  13472 142.0
+  12851 239.0
+  12190 141.0

@@ -1,0 +1,172 @@
+    1  history
+    2  cd ~/
+    3  ls -l
+    4  ls -l .*
+    5  cat .bash_history 
+    6  rm .bash_history 
+    7  [200~git clone https://github.com/Prasham-27/CS131
+    8  git clone https://github.com/Prasham-27/CS131
+    9  pip install git
+   10  sudo install git
+   11  sudo apt-get install git
+   12  git clone https://github.com/Prasham-27/CS131
+   13  pwd
+   14  echo $HOME
+   15  id
+   16  ls /proc | grep mem
+   17  ls /proc | grep cpu
+   18  head /proc/meminfo
+   19  head /proc/cpuinfo
+   20  tail /proc/cpuinfo
+   21  cat /proc/cpuinfo
+   22  cat /etc/os-release
+   23  exit
+   24  git add ws2.txt cmds.log
+   25  cd CS 131
+   26  cd CS131
+   27  cd ws2
+   28  git add ws2.txt cmds.log
+   29  git commit -m "Completed Workshop 2"
+   30  git config --global user.name "Prasham-27"
+   31  git config user.email "prashams27@gmail.com"
+   32  git commit -m "Completed Worksheet 2"
+   33  git push origin main
+   34  vim cmds.log
+   35  sudo apt update
+   36  sudo apt install git
+   37  git --version
+   38  git clone https://github.com/Prasham-27/CS131
+   39  cd CS131
+   40  mkdir ws2 && cd ws2
+   41  script ws2.txt
+   42  history > cmds.log
+   43  vim ws2.txt
+   44  export PATH=$PATH:/home/ubuntu/.local/bin
+   45  [200~pip --version
+   46  gdown --version
+   47  ~pip --version
+   48  gdown --version
+   49  whoami
+   50  sudo apt update
+   51  sudo apt install python3-pip -y
+   52  pip install gdown
+   53  pip --version
+   54  gdown --version
+   55  pip show gdown
+   56  gdown --version
+   57  ls /home/ubuntu/.local/bin/gdown
+   58  /home/ubuntu/.local/bin/gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+   59  echo 'export PATH=$PATH:/home/ubuntu/.local/bin' >> ~/.bashrc
+   60  source ~/.bashrc
+   61  which gdown
+   62  gdown --version
+   63  ls -l
+   64  file 2019-01-h1.csv
+   65  grep '^2019-01-02' 2019-01-h1.csv > jan2_data.csv
+   66  cut -d',' -f5 jan2_data.csv > jan2_pickup_locations.txt
+   67  sort jan2_pickup_locations.txt | uniq -c | sort -rn | head -3
+   68  sort jan2_pickup_locations.txt | uniq -c | sort -rn | head -3 > ws3.txt
+   69  grep '^2019-01-10' 2019-01-h1.csv > jan10_data.csv
+   70  cut -d',' -f5 jan10_data.csv > jan10_pickup_locations.txt
+   71  sort jan10_pickup_locations.txt | uniq -c | sort -rn | head -3
+   72  sort jan10_pickup_locations.txt | uniq -c | sort -rn | head -3 >> ws3.txt
+   73  vim ws3.txt
+   74  pip --version
+   75  gdown --version
+   76  gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+   77  ls -l
+   78  file 2019-01-h1.csv
+   79  grep '^2019-01-02' 2019-01-h1.csv > jan2data.csv
+   80  cut -d',' -f5 jan2data.csv > jan2pickup_locations.txt
+   81  sort jan2pickup_locations.txt | uniq -c | sort -rn | head -3
+   82  [200~rm ws3.txt
+   83  rm ws3.txt
+   84  sort jan2pickup_locations.txt | uniq -c | sort -rn | head -3 > ws3.txt
+   85  vim ws3.txt
+   86  [200~head 2019-01-h1.csv
+   87  ~head 2019-01-h1.csv
+   88  head 2019-01-h1.csv
+   89  grep '^2019-01-02' 2019-01-h1.csv > jan2_data.csv
+   90  cut -d',' -f5 jan2_data.csv | sort | uniq -c | sort -rn | head -3 > ws3.txt
+   91  grep '^2019-01-10' 2019-01-h1.csv > jan10_data.csv
+   92  cut -d',' -f5 jan10_data.csv | sort | uniq -c | sort -rn | head -3 >> ws3.txt
+   93  cat ws3.txt
+   94  ls
+   95  rm ws3.txt
+   96  ls
+   97  cd cs131
+   98  cd CS 131
+   99  cd CS131
+  100  mkdir ws3
+  101  cd ws3
+  102  touch ws3.txt
+  103  rm ws3.txt
+  104  grep "2019-01-02" 2019-01-h1.csv > january_2.csv
+  105  cut -d',' -f8 january_2.csv > pickup_ids_january_2.txt
+  106  sort pickup_ids_january_2.txt > sorted_pickup_ids_january_2.txt
+  107  uniq -c sorted_pickup_ids_january_2.txt > counts_january_2.txt
+  108  sort -nr counts_january_2.txt | head -n 3 > top_3_january_2.txt
+  109  cd cs131/ws3/
+  110  cd cd cs131/ws3/
+  111  cd CS131/ws3/
+  112  echo "Top 3 Pickup Locations for January 2, 2019:" >> ws3.txt
+  113  cat top_3_january_2.txt >> ws3.txt
+  114  cd
+  115  touch ws3.txt
+  116  echo "Top 3 Pickup Locations for January 2, 2019:" >> ws3.txt
+  117  cat top_3_january_2.txt >> ws3.txt
+  118  vim ws3.txt
+  119  grep "2019-01-10" 2019-01-h1.csv > january_10.csv
+  120  cut -d',' -f8 january_10.csv > pickup_ids_january_10.txt
+  121  sort pickup_ids_january_10.txt | uniq -c | sort -nr | head -n 3 > top_3_january_10.txt
+  122  echo "Top 3 Pickup Locations for January 10, 2019:" >> ws3.txt
+  123  cat top_3_january_10.txt >> ws3.txt
+  124  vim ws3.txt
+  125  [200~history > cmds.log
+  126  history > cmds.log
+  127  mv ws3.txt cmds.log CS131/ws3/
+  128  cd CS131/ws3/
+  129  ls
+  130  vim ws3.txt
+  131  vim cmds.log
+  132  git add ws3.txt cmds.log
+  133  git commit -m "Completed WS3 assignment"
+  134  git push origin main
+  135  git pull origin main
+  136  git status
+  137  git pull origin main --no-rebase
+  138  git push origin main
+  139  git pull origin main
+  140  cd ~/CS131
+  141  mkdir a1
+  142  cd a1
+  143  nano ~/.bashrc
+  144  source ~/.bashrc
+  145  l >> a1.txt
+  146  w >> a1.txt
+  147  echo "Task 1a Output:" >> a1.txt
+  148  l >> a1.txt
+  149  echo -e "\nTask 1b Output:" >> a1.txt
+  150  w >> a1.txt
+  151  l
+  152  w
+  153  mkdir FARE
+  154  grep ',48.0,161.0,' 2019-01-h1.csv | cut -d',' -f11 > FARE/48.0-161.0.txt
+  155  cd
+  156  mv 2019-01-h1.csv CS131/a1
+  157  nano .gitignore
+  158  git status
+  159  cd CS131/a1
+  160  git status
+  161  nano .gitignore
+  162  git status
+  163  ls CS131/a1
+  164  grep ',48.0,161.0,' 2019-01-h1.csv | cut -d',' -f11 > FARE/48.0-161.0.txt
+  165  grep ',239.0,246.0,' 2019-01-h1.csv | cut -d',' -f11 > FARE/239.0-246.0.txt
+  166  echo -e "\nTask 2c Output:" >> a1.txt
+  167  for file in FARE/*.txt; do     sum=$(paste -sd+ $file | bc);     count=$(wc -l < $file);     echo "${file##*/} average: $(echo "scale=2; $sum/$count" | bc)" >> a1.txt; done
+  168  echo -e "\nTask 2d Output:" >> a1.txt
+  169  grep '2019-01-10' 2019-01-h1.csv | cut -d',' -f17 | sort -nr | head -1 >> a1.txt
+  170  echo -e "\nTask 2e Output:" >> a1.txt
+  171  grep '2019-01' 2019-01-h1.csv | cut -d',' -f4,9 | grep -E '^[3-9]|^[0-9]{2,}' | cut -d',' -f2 | sort | uniq -c | sort -nr | head -10 >> a1.txt
+  172  history > cmds.log
