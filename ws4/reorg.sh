@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Get current date/time info
 datetime=$(date "+%F-%T")
 
