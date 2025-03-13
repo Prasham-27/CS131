@@ -1,0 +1,63 @@
+#!/bin/bash
+
+# organize - Organizes files in the current directory into subdirectories based on file type.
+
+# Check if directory is provided as argument, else use current directory
+TARGET_DIR=${1:-$(pwd)}
+
+# Verify the provided directory exists
+if [ ! -d "$TARGET_DIR" ]; then
+  echo "Directory does not exist: $TARGET_DIR"
+  exit 1
+fi
+
+cd "$TARGET_DIR"
+
+# Loop through files and organize them by extension/type
+for FILE in *; do
+  if [ -f "$FILE" ]; then
+    EXTENSION="${FILE##*.}"
+    case "$EXTENSION" in
+    case "$EXTENSION" in
+ 
+      srt|sub|vtt)
+        DEST="Subtitles"
+        ;;
+      epub|mobi|azw|azw3)
+        DEST="Ebooks"
+        ;;
+      ttf|otf|woff|woff2)
+        DEST="Fonts"
+        ;;
+      jpg|jpeg|png|gif|bmp)
+        DEST="Images"
+        ;;
+      mp4|mkv|avi|mov)
+        DEST="Videos"
+        ;;
+      mp3|wav|aac|flac)
+        DEST="Audio"
+        ;;
+      pdf|doc|docx|txt|ppt|pptx)
+        DEST="Documents"
+        ;;
+      zip|tar|gz|rar)
+        DEST="Archives"
+        ;;
+      sh|py|java|c|cpp|js|html|php|css)
+        DEST="Code"
+        ;;
+      *)
+        DEST="Others"
+        ;;
+    esac
+
+    # Create destination folder if it doesn't exist
+    mkdir -p "$DEST"
+
+    # Move file to destination folder
+    mv "$FILE" "$DEST/"
+  fi
+done
+
+echo "Files organized successfully in $TARGET_DIR."
