@@ -18,7 +18,6 @@ for FILE in *; do
   if [ -f "$FILE" ]; then
     EXTENSION="${FILE##*.}"
     case "$EXTENSION" in
-    case "$EXTENSION" in
  
       srt|sub|vtt)
         DEST="Subtitles"
