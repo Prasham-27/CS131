@@ -15,17 +15,49 @@ The `organize` command automatically sorts and organizes files in a specified di
 
 ### Installation
 
+#### Method 1: Make it available in the current directory only
+
 Make sure the script is executable:
 
 ```
 chmod +x organize
 ```
 
-Then place it in your PATH or execute directly from its location:
+Then execute it directly from its location:
 
 ```
 ./organize [optional-directory-path]
 ```
+
+#### Method 2: Make it available system-wide (Linux/Mac)
+
+1. Copy the script to a directory in your PATH:
+
+   **For Linux:**
+   ```
+   sudo cp organize /usr/local/bin/
+   sudo chmod +x /usr/local/bin/organize
+   ```
+
+   **For Mac:**
+   ```
+   sudo cp organize /usr/local/bin/
+   sudo chmod +x /usr/local/bin/organize
+   ```
+
+   **Alternative (no sudo required):**
+   ```
+   mkdir -p ~/bin
+   cp organize ~/bin/
+   chmod +x ~/bin/organize
+   echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc  # or ~/.zshrc for Mac
+   source ~/.bashrc  # or source ~/.zshrc for Mac
+   ```
+
+2. Now you can run the command from any directory:
+   ```
+   organize [optional-directory-path]
+   ```
 
 ### Usage Syntax:
 
@@ -45,11 +77,19 @@ The script organizes files into the following categories:
 - **Audio**: mp3, wav, aac, flac
 - **Documents**: pdf, doc, docx, txt, ppt, pptx
 - **Archives**: zip, tar, gz, rar
-- **Code**: sh, py, java, c, cpp, js, html, css
-- **Subtitles**: srt, sub, vtt
+- **Code**: sh, py, java, c, cpp, js, html, php, css
+- **Subtitles**: ass, srt, sub, vtt
 - **Ebooks**: epub, mobi, azw, azw3
 - **Fonts**: ttf, otf, woff, woff2
 - **Others**: Any other file types
+
+### Behavior with Existing Directories
+
+- If a category directory (like "Images" or "Documents") already exists, the script will use that existing directory and add files to it.
+- The script will not overwrite or delete existing files in the destination directories.
+- If a file with the same name already exists in the destination directory, the script will not move the file (standard behavior of the `mv` command).
+- The script only processes files in the top level of the specified directory; it does not recursively organize files in subdirectories.
+- Directories themselves are not moved or reorganized, only individual files.
 
 ## Examples
 
@@ -122,27 +162,41 @@ test_folder/
     └── unknownfile.xyz
 ```
 
-### Example 3: Real-world usage
+### Example 3: Real-world usage from any directory
 
 ```
-~$ cd ~/Downloads
-~/Downloads$ ls
-assignment.pdf  background.png  lecture.mp4  novel.epub  project.zip  subtitles.srt  theme.ttf
+# You can be in any directory
+~$ cd /some/random/path
 
-~/Downloads$ organize
+# And organize your Downloads folder
+/some/random/path$ organize ~/Downloads
 Files organized successfully in /home/user/Downloads.
 
-~/Downloads$ ls
-Archives  Documents  Ebooks  Fonts  Images  Subtitles  Videos
+# Or organize your current working directory
+/some/random/path$ organize
+Files organized successfully in /some/random/path.
+```
 
-~/Downloads$ find . -type f
-./Archives/project.zip
-./Documents/assignment.pdf
-./Ebooks/novel.epub
-./Fonts/theme.ttf
-./Images/background.png
-./Subtitles/subtitles.srt
-./Videos/lecture.mp4
+### Example 4: Behavior with existing directories
+
+**Before:**
+```
+Downloads/
+├── Images/           # Existing directory with some files
+│   ├── vacation.jpg
+│   └── profile.png
+├── new-photo.jpg     # New file to be organized
+└── screenshot.png    # New file to be organized
+```
+
+**After running `organize`:**
+```
+Downloads/
+├── Images/           # Existing directory used by the script
+│   ├── vacation.jpg  # Existing files remain untouched
+│   ├── profile.png   # Existing files remain untouched
+│   ├── new-photo.jpg # New file moved here
+│   └── screenshot.png # New file moved here
 ```
 
 ---
