@@ -1,6 +1,6 @@
-# Organize Command
+# Organize Script
 
-## What this command does
+## What this script does
 
 The `organize` command automatically sorts and organizes files in a specified directory (or current directory by default) into categorized subdirectories based on their file types/extensions.
 
