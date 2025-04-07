@@ -1,0 +1,32 @@
+Student Grade Analysis
+======================
+
+Student Results:
+---------------
+Student: Alice
+Total Score: 253
+Average Score: 84.3333
+Status: Pass
+
+Student: Bob
+Total Score: 246
+Average Score: 82
+Status: Pass
+
+Student: Charlie
+Total Score: 270
+Average Score: 90
+Status: Pass
+
+Student: David
+Total Score: 195
+Average Score: 65
+Status: Fail
+
+Student: Eve
+Total Score: 265
+Average Score: 88.3333
+Status: Pass
+
+Top Scoring Student: Charlie (Total: 270)
+Lowest Scoring Student: David (Total: 195)

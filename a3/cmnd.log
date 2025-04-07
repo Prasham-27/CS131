@@ -1,0 +1,7 @@
+mkdir -p a3
+cd a3
+touch grader.awk
+touch a3.txt
+chmod +x grader.awk
+awk -f grader.awk grades.csv
+awk -f grader.awk grades.csv > a3.txt
