@@ -1,0 +1,6 @@
+docker run -p 8888:8888 -v /Users/prashamsheth/Documents/CS131/a5:/home/jovyan/work jupyter/all-spark-notebook:spark-3.5.0
+nano commands.sh
+chmod +x commands.sh
+./commands.sh
+nano ml_analysis.py
+spark-submit ml_analysis.py
